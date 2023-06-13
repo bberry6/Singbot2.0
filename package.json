@@ -1,0 +1,22 @@
+{
+  "name": "singbot2.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "updateCommandsDev": "node .\\build\\scripts\\deploy-commands.js --dev",
+    "updateCommandsProd": "node .\\build\\scripts\\deploy-commands.js --prod",
+    "start": "node .\\build\\index.js",
+    "startDev": "node .\\build\\index.js --dev"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.9.0",
+    "jaro-winkler": "^0.2.8",
+    "mongodb-memory-server": "^8.12.2",
+    "mongoose": "^7.0.3"
+  }
+}
